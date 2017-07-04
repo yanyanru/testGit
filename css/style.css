@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.14rem;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input {
+  -webkit-appearance: none; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrap {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: .42rem;
+  background: #393A3F;
+  color: #fff;
+  line-height: .42rem;
+  text-align: center;
+  font-size: .16rem; }
+
+.scroll {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  .scroll dl {
+    display: flex;
+    height: .95rem;
+    border-bottom: 1px solid #ccc; }
+    .scroll dl dt {
+      width: .8rem;
+      height: .8rem;
+      padding: 0.1rem 0 .06rem .1rem; }
+      .scroll dl dt img {
+        width: 100%;
+        height: 100%; }
+    .scroll dl dd {
+      flex: 4;
+      padding-left: .1rem;
+      position: relative; }
+      .scroll dl dd h6 {
+        font-size: .14rem;
+        color: #37363B;
+        padding-top: .08rem;
+        padding-right: .15rem; }
+      .scroll dl dd p {
+        font-size: .12rem;
+        color: #A9A9A9; }
+      .scroll dl dd .money {
+        position: absolute;
+        left: .1rem;
+        bottom: 5px;
+        color: #A9A9A9;
+        font-size: .12rem;
+        color: #C93C44; }
+        .scroll dl dd .money em {
+          font-style: normal;
+          font-size: .2rem; }
+
+.num {
+  position: absolute;
+  right: .1rem;
+  bottom: 5px;
+  width: .7rem;
+  height: .2rem;
+  border: 1px solid #ccc;
+  display: flex; }
+  .num .del {
+    flex: 3;
+    border: none;
+    border-right: 1px solid #ccc;
+    background: #fff; }
+  .num .text {
+    flex: 4;
+    text-align: center;
+    line-height: .2rem; }
+  .num .add {
+    flex: 3;
+    border: none;
+    border-left: 1px solid #ccc;
+    background: #fff; }
+
+.footer {
+  height: .42rem;
+  line-height: .42rem;
+  display: flex;
+  text-align: center; }
+  .footer .all {
+    flex: 1;
+    background: url("../images/bj.jpg"); }
+  .footer .cost {
+    flex: 1;
+    background: #EC302F;
+    color: #fff;
+    border: none; }
+
+/*# sourceMappingURL=style.css.map */

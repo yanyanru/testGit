@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no">
+	<link type="text/css"  rel="stylesheet" href="css/style.css">
+	<link type="text/css"  rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+				购物车
+		</header>
+		<div class="scroll">
+			<dl>
+				<dt><img src="images/pic2.jpg" alt=""></dt>
+				<dd class='content'>
+					<h6>ONLY2017春装新品两件套开衩雪纺长款衬衫连衣裙女</h6>
+					<p>颜色：H33海军蓝 尺码：160/80A/S</p>
+					<a href="javascripe:;" class="money">
+						￥<em class='price'>160</em>	
+					</a>
+					<div class="num">
+						<button class='del'>-</button>
+						<span class="text">1</span>
+						<button class='add'>+</button>
+					</div>				
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/pic2.jpg" alt=""></dt>
+				<dd class='content'>
+					<h6>ONLY2017春装新品两件套开衩雪纺长款衬衫连衣裙女</h6>
+					<p>颜色：H33海军蓝 尺码：160/80A/S</p>
+					<a href="javascripe:;" class="money">
+						￥<em class='price'>120</em>	
+					</a>
+					<div class="num">
+						<button class='del'>-</button>
+						<span class="text">1</span>
+						<button class='add'>+</button>
+					</div>				
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/pic3.jpg" alt=""></dt>
+				<dd class='content'>
+					<h6>ONLY2017春装新品纯棉可拆卸牛仔背带半身裙女</h6>
+					<p>颜色：海军蓝 尺码：165/68A/MR</p>
+					<a href="javascripe:;" class="money">
+						￥<em class='price'>140</em>	
+					</a>
+					<div class="num">
+						<button class='del'>-</button>
+						<span class="text">1</span>
+						<button class='add'>+</button>
+					</div>				
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/pic1.jpg" alt=""></dt>
+				<dd class='content'>
+					<h6>春装新品两件套</h6>
+					<p>颜色：海军蓝 尺码：160/80A</p>
+					<a href="javascripe:;" class='money'>
+						￥<em class='price'>220</em>	
+					</a>
+					<div class="num">
+						<button class='del'>-</button>
+						<span class="text">1</span>
+						<button class='add'>+</button>
+					</div>					
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/pic3.jpg" alt=""></dt>
+				<dd class='content'>
+					<h6>ONLY2017春装新品纯棉可拆卸牛仔背带半身裙女</h6>
+					<p>颜色：海军蓝 尺码：165/68A/MR</p>
+					<a href="javascripe:;" class="money">
+						￥<em class='price'>140</em>	
+					</a>
+					<div class="num">
+						<button class='del'>-</button>
+						<span class="text">1</span>
+						<button class='add'>+</button>
+					</div>				
+				</dd>
+			</dl>
+		</div>
+		<div class="footer">
+			<div class="all">
+				合计：￥<span>0</span>
+			</div>
+			<button class="cost">
+				去结算
+			</button>
+		</div>
+	</div>
+	<script type='text/javascript' src='js/zepto.min.js'></script>
+	<script type='text/javascript' src='js/touch.js'></script>
+	<script ></script>
+	<script type='text/javascript'>
+		money();
+		var text;
+		$('.num').on('touchstart','.del',function(){
+			text = $(this).next().text();
+			text--;
+			text = text<=1?1:text;
+			$(this).next().text(text);
+			money();
+		}).on('touchstart','.add',function(){
+			text = $(this).prev().text();
+			text++;
+			$(this).prev().text(text);
+			money();
+		})
+		function money (){
+			var sum = 0;
+			$('dl').each(function(i,n){
+				var price = $(n).find('.price').text(),	
+					num = $(n).find('.text').text();
+					sum+=price*num;
+			})
+			// console.log(sum)
+			$('.all').find('span').text(sum)
+		}
+	</script>	
+</body>
+</html>

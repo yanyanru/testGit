@@ -1,0 +1,132 @@
+	* {
+  margin: 0px;
+  padding: 0px; 
+  font-size:0.14rem;
+  box-sizing:border-box;
+  }
+ul, li {
+  list-style: none; }
+a{ text-decoration:none; color:#333;}
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input {
+  -webkit-appearance: none; }
+html,body,.wrap{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.wrap{
+	display:flex;
+	flex-direction:column;
+}
+.header{
+	height:.42rem;
+	background:#393A3F;
+	color:#fff;
+	line-height:.42rem;
+	text-align:center;
+	font-size:.16rem;
+}
+.scroll{
+	flex:1;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	dl{
+		display:flex;
+		height:.95rem;
+		border-bottom:1px solid #ccc;
+		dt{
+			width:.8rem;
+			height:.8rem;
+			padding:0.1rem 0 .06rem .1rem;
+			img{
+				width:100%;
+				height:100%;
+			} 
+		}
+		dd{
+			flex:4;
+			padding-left:.1rem;
+			position:relative;
+			h6{
+				font-size:.14rem;
+				color:#37363B;
+				padding-top:.08rem;
+				padding-right:.15rem;
+			}
+			p{
+				font-size:.12rem;
+				color:#A9A9A9;
+			}
+			.money{
+				position:absolute;
+				left:.1rem;
+				bottom:5px;
+				color:#A9A9A9;
+				font-size:.12rem;
+				color:#C93C44;
+				em{
+					font-style:normal;
+					font-size:.2rem;
+				}
+			}
+		}
+	}
+}
+.num{
+	position:absolute;
+	right:.1rem;
+	bottom:5px;
+	width:.7rem;
+	height:.2rem;
+	border:1px solid #ccc;
+	display:flex;
+	.del{
+		flex:3;
+		border:none;
+		border-right:1px solid #ccc;
+		background:#fff;
+	}
+	.text{
+		flex:4;
+		text-align:center;
+		line-height:.2rem;
+
+	}
+	.add{
+		flex:3;
+		border:none;
+		border-left:1px solid #ccc;
+		background:#fff;
+	}
+}
+.footer{
+	height:.42rem;
+	line-height:.42rem;
+	display:flex;
+	text-align:center;
+
+	.all{
+		flex:1;
+		background:url('../images/bj.jpg');
+
+
+	}
+	.cost{
+		flex:1;
+		background:#EC302F;
+		color:#fff;
+		border:none;
+	}
+}
